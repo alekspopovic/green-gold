@@ -33,7 +33,8 @@
   background-color: transparent;
 }
 
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
 }
@@ -52,7 +53,7 @@
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     color: rgba(2, 115, 115, 1);
     display: none;
   }
@@ -97,12 +98,12 @@
 
 .masthead {
   background: linear-gradient(to left, #2d545e, #12343b);
-  border-bottom: 0.2rem solid #e1b382;
+  border-bottom: 1px solid #e1b382;
   padding: 4rem 0 2rem 0;
 }
 
 .masthead h1 {
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-weight: 300;
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -128,12 +129,12 @@
 @media (min-width: 992px) {
   .masthead {
     /* height: 100vh; */
-    height: 45vh;
+    height: 35vh;
     padding: 0;
   }
   .masthead h1 {
-    font-size: 7.5rem;
-    line-height: 7.5rem;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
@@ -145,22 +146,29 @@
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 4rem;
-  font-family: 'Bree Serif', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 90%;
   text-transform: uppercase;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   border: 0;
 }
 
 .btn-primary {
-  background-color: #e1b382;
-  color: #12343b;
+  background-color: #12343b;
+  color: white;
   font-weight: bold;
+  transition: 0.4s all;
+  font-weight: 300 !important;
+  letter-spacing: 6px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  border-radius: 0;
 }
 
 .btn-primary:hover {
   background-color: #12343b;
   color: #e1b382;
+  transform: scale(1.1);
 }
 
 .btn-primary:focus {
@@ -175,11 +183,7 @@
 .book-section {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 90%, rgba(0, 0, 0, 0.3) 100%), url("../img/river2.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background: linear-gradient(to left, #e1b3824b, #e1b3824b);
 }
 
 .book-section p {
@@ -192,35 +196,60 @@
 
 .info-section {
   padding: 4rem 0 2rem 0;
-  background: linear-gradient(to left,#e1b3823d, #c8956638);
-}
-
-.info-section h1, .excerpt-section h1 {
-  color: #12343b;
-}
-
-.news-section {
-  padding: 2rem 0 4rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 90%, rgba(0, 0, 0, 0.3) 100%), url("../img/news.jpeg");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../img/6.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
-.excerpt-section {
-  padding: 4rem 0 2rem 0;
-  background: linear-gradient(to left,#e1b3823d, #c8956638);
+.info-section h1 {
+  color: white;
 }
 
-.news-section h1, .news-section h2 {
+.excerpt-section h1 {
+  color: #12343b;
+}
+
+.news-section {
+  padding: 2rem 0 4rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 90%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../img/sunce2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.info-section img {
+  float: right;
+}
+
+.excerpt-section {
+  padding: 4rem 0 2rem 0;
+  background: linear-gradient(to left, #e1b3823d, #c8956638);
+}
+
+.news-section h1,
+.news-section h2 {
   color: white;
-  font-family: 'Bree Serif', serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
-.excerpt-section h4, .signup-section h2, .contact-section h2 {
-  font-family: 'Bree Serif', serif;
+.excerpt-section h4,
+.signup-section h2,
+.contact-section h2 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
@@ -228,20 +257,22 @@
   padding: 2rem;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
-  border-bottom: 0.1rem solid #67B346;
+  border-bottom: 0.1rem solid #67b346;
 }
 
-.news-section .row>div {
+.news-section .row > div {
   padding-top: 2rem;
 }
 
-.info-section .featured-text, .news-section .featured-text, .excerpt-section .featured-text {
+.info-section .featured-text,
+.news-section .featured-text,
+.excerpt-section .featured-text {
   padding: 2rem;
 }
 
 .bookText {
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 300;
+  color: #0c2227;
+  font-weight: 400;
   margin-left: auto !important;
   margin-right: auto !important;
   padding: 2rem;
@@ -253,9 +284,24 @@
     padding-bottom: 7rem;
   }
 
-  .info-section .featured-text, .excerpt-section .featured-text {
+  .book-section h1 {
+    color: #12343b;
+  }
+
+  .info-section .featured-text,
+  .excerpt-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #12343b;
+    /* border-left: 0.5rem solid #e1b382; */
+    color: rgba(255, 255, 255, 0.856);
+  }
+
+  .info-section .featured-text {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+  }
+
+  .info-section .featured-text p {
+    padding: 5px 0;
   }
 
   .news-section .featured-text {
@@ -264,40 +310,107 @@
     border-bottom: none;
   }
 
-  .news-section h1, .news-section h2 {
+  .news-section h1,
+  .news-section h2 {
     margin-bottom: 3rem;
   }
 
-  .news-section .row>div {
+  .news-section .row > div {
     padding-top: 0;
   }
 
   .bookText {
-    margin: 0 150px 0 0 !important;
-    padding: 0;
+    /* margin: 0 150px 0 0 !important; */
+    padding: 20px 40px;
+    text-align: left;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+
+  .bookText::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .bookText::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(200, 200, 200, 1);
+    border-radius: 10px;
+  }
+
+  .bookText::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #12343bcc;
+    -webkit-box-shadow: inset 0 0 6px rgba(90, 90, 90, 0.7);
   }
 }
 
-.info-section .project-text, .news-section .project-text, .excerpt-section .project-text {
+.info-section .project-text,
+.news-section .project-text,
+.excerpt-section .project-text {
   padding: 3rem;
   font-size: 90%;
   font-weight: 300;
 }
 
+.excerpt-section .project-text {
+  max-height: 390px;
+  overflow-y: scroll;
+}
+
+#odlomci img {
+  max-height: 1000px;
+}
+
+#odlomci .row {
+  margin: 25px 0;
+  /* background: linear-gradient(to left, #2d545e, #12343b); */
+  background-color: #12343b;
+  color: white;
+}
+
+.project-text::-webkit-scrollbar {
+  width: 10px;
+}
+
+.project-text::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgb(212, 212, 212); */
+  border-radius: 10px;
+}
+
+.project-text::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #e1b382;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(47, 47, 47, 0.7); */
+}
+
+.project-text::-webkit-scrollbar-track-piece {
+  background-color: rgb(59, 59, 59);
+  border-radius: 10px;
+}
+
 @media (min-width: 992px) {
-  .info-section .project-text, .news-section .project-text, .excerpt-section .project-text {
-    padding: 5rem;
+  .info-section .project-text,
+  .news-section .project-text,
+  .excerpt-section .project-text {
+    padding: 40px 60px;
   }
-  .info-section .project-text hr, .news-section .project-text hr, .excerpt-section .project-text hr {
+  .info-section .project-text hr,
+  .news-section .project-text hr,
+  .excerpt-section .project-text hr {
     border-color: #e1b382;
-    border-width: .25rem;
+    border-width: 0.25rem;
     width: 30%;
   }
 }
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/river4.jpeg");
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.1) 0%,
+      rgba(22, 22, 22, 0.5) 75%,
+      #161616 100%
+    ),
+    url("../img/river4.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -308,7 +421,7 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: 'Bree Serif', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -317,6 +430,7 @@
 
 .contact-section {
   padding: 5rem 0 0;
+  background-color: #12343b;
 }
 
 .contact-section .card {
@@ -326,7 +440,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Bree Serif', serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -361,16 +475,16 @@
 
 body {
   /* font-family: 'Nunito'; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.0625em;
 }
 
 a {
-  color: #64a19d;
-  color: white !important;
+  color: white;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   text-decoration: none;
   color: #3c6360;
 }
@@ -389,16 +503,15 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+  background-color: #12343b;
 }
 
 h1 {
-  font-family: 'Bree Serif', serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
 
-
 /* test fontova */
-
 
 /* #knjige h1 {
   font-size: 80px;
