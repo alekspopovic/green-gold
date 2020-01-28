@@ -198,10 +198,10 @@
   padding: 4rem 0 2rem 0;
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.6) 50%,
-      rgba(0, 0, 0, 0.3) 100%
+      rgba(4, 141, 68, 0.1) 50%,
+      rgba(0, 0, 0, 0.2) 100%
     ),
-    url("../img/6.jpeg");
+    url("../img/naslovna.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -218,12 +218,8 @@
 
 .news-section {
   padding: 2rem 0 4rem 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4) 90%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url("../img/sunce2.jpeg");
+  background: linear-gradient(to top, #12343b75 10%, #12343bc0 100%),
+    url("../img/test2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -296,7 +292,7 @@
   }
 
   .info-section .featured-text {
-    background: rgba(0, 0, 0, 0.4);
+    background: #12343b9d;
     padding: 40px 30px;
   }
 
@@ -405,12 +401,12 @@
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(
-      to bottom,
-      rgba(22, 22, 22, 0.1) 0%,
-      rgba(22, 22, 22, 0.5) 75%,
+      to top,
+      #12343b5b 10%,
+      rgba(22, 22, 22, 0.9) 100%,
       #161616 100%
     ),
-    url("../img/river4.jpeg");
+    url("../img/footer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -430,7 +426,7 @@
 
 .contact-section {
   padding: 5rem 0 0;
-  background-color: #12343b;
+  background: linear-gradient(to left, #2d545e, #12343b);
 }
 
 .contact-section .card {
@@ -503,12 +499,16 @@ a:hover {
 
 footer {
   padding: 5rem 0;
-  background-color: #12343b;
+  background: linear-gradient(to left, #2d545e, #12343b);
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+
+.card-body h4 {
+  color: #12343b9f;
 }
 
 /* test fontova */
