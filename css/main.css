@@ -243,22 +243,13 @@
 }
 
 .excerpt-section {
-  padding: 4rem 0 2rem 0;
+  padding: 4em 0 8em 0;
   background: linear-gradient(to left, #e1b3823d, #c8956638);
 }
 
 .news-section h1,
 .news-section h2 {
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
-
-.excerpt-section h4,
-.signup-section h2,
-.contact-section h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
 }
 
 .news-section .featured-text {
@@ -516,8 +507,10 @@ footer {
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  letter-spacing: 4px;
 }
 
 .card-body h4 {
