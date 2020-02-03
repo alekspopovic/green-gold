@@ -197,7 +197,7 @@
       rgba(4, 141, 68, 0.1) 50%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url("../img/naslovna.jpg");
+    url("../img/naslovna.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -227,7 +227,7 @@
 .news-section {
   padding: 4rem 0 4rem 0;
   background: linear-gradient(to top, #12343b75 10%, #12343bc0 100%),
-    url("../img/test2.jpg");
+    url("../img/zastani.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -462,7 +462,6 @@
 }
 
 body {
-  /* font-family: 'Nunito'; */
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.0625em;
 }
