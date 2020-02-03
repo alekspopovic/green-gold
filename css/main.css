@@ -513,11 +513,9 @@ h1 {
   border-color: white;
 }
 
-.contact-section .card:hover .card-body {
-  color: white !important;
-}
-
-.contact-section .card:hover .fab {
+.contact-section .card:hover .card-body,
+.contact-section .card:hover .fab,
+.contact-section .card:hover .fas {
   color: white !important;
 }
 
