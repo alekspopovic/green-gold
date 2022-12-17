@@ -323,7 +323,7 @@
 
   .info-section img {
     float: right;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
     box-shadow: var(--box-shadow);
   }
 }
@@ -538,6 +538,13 @@ h1 {
 
 .contact-section .card:hover hr {
   border-color: white !important;
+}
+
+@media only screen and (max-device-width: 850px) {
+  .imageContainer {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-device-width: 768px) {
