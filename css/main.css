@@ -598,3 +598,7 @@ h1 {
 section {
   font-size: 1.2rem;
 }
+
+.separator {
+  margin: 2em 0;
+}
