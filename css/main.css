@@ -49,7 +49,7 @@
 }
 
 .navbar-nav .nav-item {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 @media (min-width: 992px) {
@@ -540,6 +540,10 @@ h1 {
   border-color: white !important;
 }
 
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
 @media only screen and (max-device-width: 850px) {
   .imageContainer {
     display: block;
@@ -563,10 +567,6 @@ h1 {
 
   .book-section .img-fluid {
     max-width: 60%;
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    color: white;
   }
 
   .bookText {
